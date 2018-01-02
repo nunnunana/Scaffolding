@@ -1,4 +1,4 @@
 # Scaffolding
 - pug
 - scss
-- es6
+- js
