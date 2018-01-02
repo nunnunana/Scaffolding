@@ -1,0 +1,42 @@
+@import 'normalize';
+@import 'reset';
+// @import 'mixin';
+@import 'base';
+html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  overflow-x: none;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  font: 87.5%/1.5 "Spoqa Han Sans", Sans-Serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'NanumSquare';
+}
+em {
+  font-style: normal;
+}
+a,
+button {
+  cursor: pointer;
+}
+header {
+  @include clearfix;
+}
+@include desktop{
+  header {
+    background: pink;
+  }
+}
